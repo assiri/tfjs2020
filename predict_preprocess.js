@@ -21,7 +21,7 @@ let model; //create the model variable
 (async function() {
    // model = await tf.loadLayersModel('/tfjs-models/mobileNet/model.json');
    let mmodel=document.querySelector("#selectmodel").value
-    model = await tf.loadLayersModel(`https://assiri.github.io/tfjs2020/tfjs-models/${mmodel}/model.json`);
+    model = await tf.loadLayersModel(`/tfjs-models/${mmodel}/model.json`);
     $('.progress-bar').hide();
     console.log(model); 
 })();
